@@ -31,3 +31,6 @@ Route::get('hello/{name}',function ($name){
 Route::get('hello/{name?}',function ($name='Everybody'){
     return 'Hello, '.$name;
 });
+Route::get('r3',function (){
+    return redirect('r2');
+});
